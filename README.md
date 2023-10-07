@@ -14,7 +14,7 @@ for login to get token
         identityNumber: 'ID67890',
     }
 ```
-deploy in server using pm2
+deploy in server using pm2 http://103.18.76.93:5000/
 
 api documentation : https://documenter.getpostman.com/view/29421533/2s9YJgSzeS
 
