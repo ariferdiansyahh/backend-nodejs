@@ -1,5 +1,5 @@
 const express = require('express');
-const mongoose = require('./config/database'); // Impor modul koneksi MongoDB
+const mongoose = require('./src/config/database'); // Impor modul koneksi MongoDB
 const app = express();
 const port = process.env.PORT || 3000;
 
@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000;
 app.use(express.json());
 
 // Mengimpor rute pengguna
-const userRoutes = require('./routes/userRoutes');
+const userRoutes = require('./src/routes/userRoutes');
 
 // Gunakan rute pengguna dengan awalan /users
 app.use('/users', userRoutes);
