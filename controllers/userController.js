@@ -27,7 +27,8 @@ exports.addUser = async (req, res) => {
 exports.editUser = async (req, res) => {
     try {
         const userId = req.params.id; 
-
+        const updates = req.body;
+        
         const updatedUser = await User.findByIdAndUpdate(userId, updates, {
         new: true, // Mengembalikan data pengguna yang telah diperbarui
         });
